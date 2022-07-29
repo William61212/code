@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Games/Anime</title>
+
+<style>
+	
+body { background-color :black; 
+color: white;
+
+}
+.main{
+	display: flex;
+	position: absolute;
+	justify-content:center;
+	width: 100%;
+	height: 100%;
+}
+
+table tr{   
+	width: 100%;
+	height: 100%;
+
+
+}
+
+td{
+	width: 50%;
+	height: 100%;
+	padding-bottom: 30px;
+
+}
+
+tr{
+
+margin-bottom: 50px;
+
+
+}
+
+table{
+		margin-left: auto;
+		margin-right: auto;
+
+
+
+}
+
+
+.card{
+
+	background-color:  transparent;
+	width: 400px;
+	height: 400px;
+	perspective: 1000px;
+}
+
+.card img{
+	width: 400px;
+	height: 400px;
+}
+
+.inner{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s;
+	transform-style: preserve-3d;
+}
+
+
+.front, .back{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	font-size: 60px;
+	color: black;
+}
+
+.back{
+	background-color: white;
+	transform: rotateX(180deg);
+
+}
+
+.card:hover .inner{
+	transform: rotateX(180deg);
+
+
+
+}
+
+
+
+
+
+</style>
+
+
+</head>
+<body>
+	<div class = "main">
+		<table class = "center">
+			<tr>
+				<td>
+					<div class = "card">
+						<div class= "inner">
+							<div class = "image">
+								<img src = "https://thumbs.dreamstime.com/b/vector-illustration-demon-slayer-logo-perfect-smartphone-wallpaper-demon-slayer-logo-wallpaper-hd-242317335.jpg" class = "front">
+							</div>
+							<div class = "back">
+								<p> Demon Slayer</p>
+							</div>
+						</div>
+					</div>
+				
+				</td>
+				
+				
+				<td>
+					
+					<div class = "card">
+						<div class= "inner">
+							<div class = "image">
+								<img src = "https://play-lh.googleusercontent.com/jAVdzq6WO0JZEA6vCd_Y0wc0GWDQkNeX_Wh87pUfhyt4OGJeflg10M0z2XVlJ9i7JiA" class = "front">
+							</div>
+							<div class = "back">
+								<p> Rodeo Stampede</p>
+							</div>
+						</div>
+					</div>
+
+
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<div class = "card">
+						<div class= "inner">
+							<div class = "image">
+								<img src = "https://doy2mn9upadnk.cloudfront.net/uploads/default/optimized/4X/f/7/c/f7c9f2a9f31bf5748c52fa1087126828a5333ac8_2_500x500.png" class = "front">
+							</div>
+							<div class = "back">
+								<p> Roblox</p>
+							</div>
+						</div>
+					</div>
+				
+				</td>
+				
+				
+				<td>
+					
+					<div class = "card">
+						<div class= "inner">
+							<div class = "image">
+								<img src = "https://e7.pngegg.com/pngimages/610/712/png-clipart-minecraft-logo-minecraft-forge-desktop-video-game-minecraft-texture-brown.png" class = "front">
+							</div>
+							<div class = "back">
+								<p> Minecraft</p>
+							</div>
+						</div>
+					</div>
+
+
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</body>
+</html>

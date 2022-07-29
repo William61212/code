@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Picture Gallery</title>
+<style>
+.wrapper{
+	width: 100%;
+	margin:  30px auto;
+
+
+}
+
+div.gallery{
+
+	margin-top: 30px;
+}	
+
+
+ul{list-style-type :none;
+
+
+}
+
+div.gallery ul li{
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin:  5px;
+	padding: 5px;
+}
+
+div.gallery ul li img{
+	position:  absolute;
+	left:0;
+	top:0;
+	padding: 5px;
+	width: 300px;
+	height: 300px;
+	background-color: white;
+
+}
+body{
+	background-color: black;
+	color: white;
+}
+
+div.gallery ul li, div.gallery li img{
+	transition: all 0.5s;
+
+}
+div.gallery ul li img:hover{
+	width: 380px;
+	height: 380px;
+	margin-top: -280px;
+	margin-left: -250px;
+	top: 65%;
+	left: 65%;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+	<div id= "header">
+		<h1> Photo Gallery </h1>
+	</div>
+
+	<div class = "wrapper">
+		<div class = "gallery">
+			<ul>
+				<li><img src = "https://cdn.domestika.org/c_fit,dpr_auto,f_auto,t_base_params,w_820/v1610480726/content-items/006/738/913/570EE8D5-0D12-45FB-9C9B-BF6B827A919E-original.jpeg?1610480726"></li>
+				<li><img src = "https://cdnb.artstation.com/p/assets/images/images/044/490/949/large/jamesloves_art-ddddd.jpg?1640162105"></li>
+				<li><img src = "https://cdna.artstation.com/p/assets/images/images/021/883/396/large/jasper-cruz-012-10-03-inosuke-14.jpg?1573302690"></li>
+				<li><img src = "https://i.pinimg.com/originals/ca/04/db/ca04dbc902cb0c7697c7362f1f5cd449.jpg"></li>
+				<li><img src = "https://w0.peakpx.com/wallpaper/747/327/HD-wallpaper-tanjiro-pic-fan-art-anime-demon-slayer-kimetsu-no-yaiba.jpg"></li>
+				<li><img src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f85de4a3-2013-4238-8b9b-a53beb187da7/ddvm7ns-07dc1033-0d8a-43a9-b465-11da7fc48d1f.jpg/v1/fill/w_1280,h_960,q_75,strp/zenitsu_of_demon_slayer_fanart_by_essan43_ddvm7ns-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTYwIiwicGF0aCI6IlwvZlwvZjg1ZGU0YTMtMjAxMy00MjM4LThiOWItYTUzYmViMTg3ZGE3XC9kZHZtN25zLTA3ZGMxMDMzLTBkOGEtNDNhOS1iNDY1LTExZGE3ZmM0OGQxZi5qcGciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.ZoTVyARd1cYp77nnMIodnXm6bIKPQLVrY3JGa32ijJQ"></li>
+				<li><img src = "https://static.zerochan.net/Hashibira.Inosuke.full.3098486.png"></li>
+				<li><img src = "https://i.ytimg.com/vi/UsHL8GaDcEE/maxresdefault.jpg"></li>
+				<li><img src = "https://i.pinimg.com/originals/32/8f/65/328f65c12cc2a3b7c24501c421785c81.jpg"></li>
+				<li><img src = "https://www.gamersdecide.com/sites/default/files/authors/u159652/best_wallpaper_3.jpg"></li>
+				<li><img src = "https://i.pinimg.com/736x/cf/37/01/cf3701f2d07c4c14d56cafa85fab063b.jpg"></li>
+				<li><img src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/f2553ebb-381e-4946-9165-d5f1a6b28a64/ddfg7jy-7d48c2b8-2323-43f7-ad15-69a51d78b0c4.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2YyNTUzZWJiLTM4MWUtNDk0Ni05MTY1LWQ1ZjFhNmIyOGE2NFwvZGRmZzdqeS03ZDQ4YzJiOC0yMzIzLTQzZjctYWQxNS02OWE1MWQ3OGIwYzQuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.nssRzKxXW8uessIMKbX3qegOAyRwm8OjKSNIFUyCa0Q"></li>
+			</ul>
+		</div>
+	</div>	
+
+
+
+
+</body>
+</html>
